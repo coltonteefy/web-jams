@@ -1,0 +1,83 @@
+.oscillator-choice-container {
+    width: -webkit-fill-available;
+    background: #33304a;
+    /*box-shadow: 0 1px 5px 3px #1f1e1e80;*/
+    box-shadow: 0 2px 12px 4px #07051f;
+    border-radius: 5px;
+    margin: 0 auto 15px;
+    text-align: center;
+    padding: 15px;
+}
+
+.oscillator-label {
+    color: #c73e61;
+    font-size: 22px;
+    font-weight: 300;
+    margin: 0 auto;
+}
+
+.oscillator-type {
+    color: white;
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 15px;
+}
+
+.type-icon-container {
+    display: grid;
+    justify-items: center;
+}
+
+.oscillator-selections {
+    margin: auto;
+    cursor: pointer;
+    padding: 8px;
+    transition: .5s ease;
+}
+
+.oscillator-selections:hover {
+    color: #ff2975;
+}
+
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-shape {
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-miterlimit: 10;
+}
+
+.svg-active {
+    stroke: #dca664;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 28;
+    animation: svgAnimate 2s linear infinite;
+}
+
+@keyframes svgAnimate {
+    from {
+        stroke-dashoffset: 55;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .oscillator-choice-container {
+        margin: 5px auto;
+        text-align: center;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .oscillator-choice-container {
+        width: 90%;
+    }
+}

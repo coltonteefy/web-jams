@@ -1,0 +1,36 @@
+.logo {
+    width: 85px;
+    margin: 0 20px;
+}
+
+.logo-text {
+    fill: #FF2975;
+    font-size: 6px;
+    font-family: 'Futura-Medium', serif;
+}
+
+.music-note {
+    fill: #853dbf;
+    animation: jump 1s ease-in-out forwards;
+    animation-delay: .5s;
+}
+
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-0.5px);
+    }
+    40% {
+        transform: translateY(0);
+    }
+    60% {
+        transform: translateY(-0.3px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+
+}

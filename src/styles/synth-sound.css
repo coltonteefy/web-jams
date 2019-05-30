@@ -1,0 +1,51 @@
+.sound-choice-container {
+    /*height: 75px;*/
+    width: -webkit-fill-available;
+    background: #33304a;
+    /*box-shadow: 0 1px 5px 3px #1f1e1e80;*/
+    box-shadow: 0 2px 12px 4px #07051f;
+    border-radius: 5px;
+    margin: 0 auto 15px;
+    text-align: center;
+    padding: 15px;
+}
+
+.sounds-label {
+    color: #c73e61;
+    font-size: 22px;
+    font-weight: 300;
+    margin: 0 auto;
+}
+
+.sound-type {
+    color: white;
+    text-align: left;
+    display: flex;
+    margin-top: 15px;
+}
+
+.sound-selections {
+    margin: auto;
+    cursor: pointer;
+    padding: 8px;
+    transition: .5s ease;
+}
+
+.sound-selections:hover {
+    color: #ff2975;
+}
+
+
+@media screen and (max-width:1500px){
+    .sound-choice-container {
+        margin: 5px auto;
+        text-align: center;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .sound-choice-container {
+        width: 90%;
+    }
+}

@@ -1,0 +1,151 @@
+body {
+    background: #28263b;
+    color: white;
+    font-family: 'Futura-Medium', serif;
+    overflow: scroll;
+    overflow-x: hidden;
+
+    /*background: rgb(51,47,74);*/
+    /*background: linear-gradient(90deg, rgba(51,47,74,1) 0%, rgba(71,65,105,1) 82%, rgba(73,65,117,1) 100%);*/
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.App {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.active {
+    color: #ff2975;
+    transition: .5s ease;
+}
+
+.app_logo {
+    height: 80px;
+}
+
+.top {
+    position: fixed;
+    top: 82px;
+    left: 5%;
+    width: 90%;
+    height: 53%;
+    overflow-x: scroll;
+    transition: all .3s ease;
+
+}
+
+.bottom {
+    position: absolute;
+    width: 100%;
+    transition: all .3s ease;
+    padding: 15px;
+    bottom: 0;
+    background: #AA076B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #61045F, #AA076B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #61045F, #AA076B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 0 2px 12px 4px #07051f;
+
+    /*position: absolute;*/
+    /*width: 95%;*/
+    /*transition: all .3s ease;*/
+    /*padding: 15px;*/
+    /*bottom: 5px;*/
+    /*left: 1.5%;*/
+    /*background: #AA076B;*/
+    /*background: linear-gradient(to right, #61045F, #AA076B);*/
+    /*box-shadow: 0 -6px 25px 6px #000000;*/
+    /*border-radius: 20px;*/
+}
+
+.grouped {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 12px;
+    margin: 15px;
+}
+
+.slide-left-animation {
+    animation: fromTheLeft 1.5s ease forwards;
+}
+
+.slide-right-animation {
+    animation: fromTheRight 1.5s ease forwards;
+}
+
+.slide-bottom-animation {
+    animation: fromTheBottom 1.5s ease forwards;
+}
+
+@keyframes fromTheLeft {
+    from {
+        transform: translateX(-200px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fromTheRight {
+    from {
+        transform: translateX(200px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fromTheBottom {
+    from {
+        transform: translateY(200px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+@media screen and (max-width: 1010px) {
+    .App {
+        display: inline-block;
+        grid-template-columns: 1fr;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .top {
+        width: 98%;
+        height: 54vh;
+        font-size: 13px;
+        top: 75px;
+        left: 1%;
+    }
+
+    .bottom {
+        /*bottom: 0;*/
+        padding: 15px 0;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        box-shadow: 0 -6px 25px 6px #000000;
+        border-radius: 5px;
+    }
+
+    .grouped {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .top {
+        height: 64vh;
+        font-size: 11px;
+    }
+}
