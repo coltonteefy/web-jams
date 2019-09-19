@@ -433,7 +433,6 @@ class App extends React.Component {
     };
 
     selectSynthSound = () => {
-        console.log(this.state.effectsAddedList);
         switch (this.soundSelected) {
             case "Synth":
                 this.setState({

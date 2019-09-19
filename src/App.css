@@ -4,9 +4,6 @@ body {
     font-family: 'Futura-Medium', serif;
     overflow: scroll;
     overflow-x: hidden;
-
-    /*background: rgb(51,47,74);*/
-    /*background: linear-gradient(90deg, rgba(51,47,74,1) 0%, rgba(71,65,105,1) 82%, rgba(73,65,117,1) 100%);*/
 }
 
 ::-webkit-scrollbar {
@@ -34,7 +31,7 @@ body {
     top: 82px;
     left: 5%;
     width: 90%;
-    height: 53%;
+    height: 57%;
     overflow-x: scroll;
     transition: all .3s ease;
 
@@ -46,21 +43,10 @@ body {
     transition: all .3s ease;
     padding: 15px;
     bottom: 0;
-    background: #AA076B;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #61045F, #AA076B);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #61045F, #AA076B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #AA076B;
+    background: -webkit-linear-gradient(to right, #61045F, #AA076B);
+    background: linear-gradient(to right, #61045F, #AA076B);
     box-shadow: 0 2px 12px 4px #07051f;
-
-    /*position: absolute;*/
-    /*width: 95%;*/
-    /*transition: all .3s ease;*/
-    /*padding: 15px;*/
-    /*bottom: 5px;*/
-    /*left: 1.5%;*/
-    /*background: #AA076B;*/
-    /*background: linear-gradient(to right, #61045F, #AA076B);*/
-    /*box-shadow: 0 -6px 25px 6px #000000;*/
-    /*border-radius: 20px;*/
 }
 
 .grouped {
